@@ -1,0 +1,414 @@
+
+*** Running vivado
+    with args -log mac.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mac.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.570 ; gain = 0.023 ; free physical = 1109 ; free virtual = 5471
+Command: synth_design -top mac -part xc7a35tcpg236-1 -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 566989
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1715.340 ; gain = 379.770 ; free physical = 801 ; free virtual = 4881
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/mac.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mul' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/mul.v:23]
+INFO: [Synth 8-6157] synthesizing module 'and_res_gen' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_res_gen.v:23]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'and_mod' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'and_mod' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'and_res_gen' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_res_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rca' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/imports/multiplier_rca/rca.v:1]
+	Parameter INPUT_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fa' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/imports/multiplier_rca/fa.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/imports/multiplier_rca/fa.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/imports/multiplier_rca/rca.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/mul.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/mac.v:23]
+WARNING: [Synth 8-7129] Port w[255] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[254] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[253] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[252] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[251] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[250] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[249] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[248] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[247] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[246] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[245] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[244] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[243] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[242] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[241] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[240] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[239] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[238] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[237] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[236] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[235] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[234] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[233] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[232] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[231] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[230] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[229] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[228] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[227] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[226] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[225] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[224] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[223] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[222] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[221] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[220] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[219] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[218] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[217] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[216] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[215] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[214] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[213] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[212] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[211] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[210] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[209] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[208] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[207] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[206] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[205] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[204] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[203] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[202] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[201] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[200] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[199] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[198] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[197] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[196] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[195] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[194] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[193] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[192] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[191] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[190] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[189] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[188] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[187] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[186] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[185] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[184] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[183] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[182] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[181] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[180] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[179] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[178] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[177] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[176] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[175] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[174] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[173] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[172] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[171] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[170] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[169] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[168] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[167] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[166] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[165] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[164] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[163] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[162] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[161] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[160] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[159] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[158] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[157] in module and_res_gen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port w[156] in module and_res_gen is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1783.309 ; gain = 447.738 ; free physical = 760 ; free virtual = 4790
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1795.184 ; gain = 459.613 ; free physical = 759 ; free virtual = 4787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1803.188 ; gain = 467.617 ; free physical = 759 ; free virtual = 4787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1811.195 ; gain = 475.625 ; free physical = 750 ; free virtual = 4774
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 240   
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1930.570 ; gain = 595.000 ; free physical = 679 ; free virtual = 4650
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 680 ; free virtual = 4650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 679 ; free virtual = 4649
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 677 ; free virtual = 4647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 677 ; free virtual = 4647
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[1] with 1st driver pin 'R_OBUF[3]_inst_i_39/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[1] with 2nd driver pin 'R_OBUF[3]_inst_i_40/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 1st driver pin 'R_OBUF[3]_inst_i_24/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 2nd driver pin 'R_OBUF[3]_inst_i_25/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 3rd driver pin 'R_OBUF[3]_inst_i_26/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 4th driver pin 'R_OBUF[3]_inst_i_27/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 5th driver pin 'R_OBUF[3]_inst_i_28/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 6th driver pin 'R_OBUF[3]_inst_i_29/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 7th driver pin 'R_OBUF[3]_inst_i_30/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 8th driver pin 'R_OBUF[3]_inst_i_31/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 9th driver pin 'R_OBUF[3]_inst_i_32/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 10th driver pin 'R_OBUF[3]_inst_i_33/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 11th driver pin 'R_OBUF[3]_inst_i_34/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 12th driver pin 'R_OBUF[3]_inst_i_35/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 13th driver pin 'R_OBUF[3]_inst_i_36/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 14th driver pin 'R_OBUF[3]_inst_i_37/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[16] with 15th driver pin 'R_OBUF[3]_inst_i_38/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[2] with 1st driver pin 'R_OBUF[3]_inst_i_41/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[2] with 2nd driver pin 'R_OBUF[3]_inst_i_42/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[2] with 3rd driver pin 'R_OBUF[3]_inst_i_43/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 1st driver pin 'R_OBUF[3]_inst_i_44/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 2nd driver pin 'R_OBUF[3]_inst_i_45/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 3rd driver pin 'R_OBUF[3]_inst_i_46/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 4th driver pin 'R_OBUF[3]_inst_i_47/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 5th driver pin 'R_OBUF[3]_inst_i_48/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 6th driver pin 'R_OBUF[3]_inst_i_49/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 7th driver pin 'R_OBUF[3]_inst_i_50/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 8th driver pin 'R_OBUF[3]_inst_i_51/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 9th driver pin 'R_OBUF[3]_inst_i_52/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 10th driver pin 'R_OBUF[3]_inst_i_53/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 11th driver pin 'R_OBUF[3]_inst_i_54/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 12th driver pin 'R_OBUF[3]_inst_i_55/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 13th driver pin 'R_OBUF[3]_inst_i_56/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[17] with 14th driver pin 'R_OBUF[3]_inst_i_57/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[3] with 1st driver pin 'R_OBUF[3]_inst_i_7/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[3] with 2nd driver pin 'R_OBUF[3]_inst_i_8/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[3] with 3rd driver pin 'R_OBUF[3]_inst_i_9/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[3] with 4th driver pin 'R_OBUF[3]_inst_i_10/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 1st driver pin 'R_OBUF[3]_inst_i_11/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 2nd driver pin 'R_OBUF[3]_inst_i_12/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 3rd driver pin 'R_OBUF[3]_inst_i_13/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 4th driver pin 'R_OBUF[3]_inst_i_14/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 5th driver pin 'R_OBUF[3]_inst_i_15/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 6th driver pin 'R_OBUF[3]_inst_i_16/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 7th driver pin 'R_OBUF[3]_inst_i_17/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 8th driver pin 'R_OBUF[3]_inst_i_18/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 9th driver pin 'R_OBUF[3]_inst_i_19/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 10th driver pin 'R_OBUF[3]_inst_i_20/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 11th driver pin 'R_OBUF[3]_inst_i_21/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 12th driver pin 'R_OBUF[3]_inst_i_22/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[18] with 13th driver pin 'R_OBUF[3]_inst_i_23/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[4] with 1st driver pin 'R_OBUF[7]_inst_i_41/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[4] with 2nd driver pin 'R_OBUF[7]_inst_i_42/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[4] with 3rd driver pin 'R_OBUF[7]_inst_i_43/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[4] with 4th driver pin 'R_OBUF[7]_inst_i_44/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[4] with 5th driver pin 'R_OBUF[7]_inst_i_45/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 1st driver pin 'R_OBUF[7]_inst_i_47/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 2nd driver pin 'R_OBUF[7]_inst_i_48/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 3rd driver pin 'R_OBUF[7]_inst_i_49/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 4th driver pin 'R_OBUF[7]_inst_i_50/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 5th driver pin 'R_OBUF[7]_inst_i_51/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 6th driver pin 'R_OBUF[7]_inst_i_52/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 7th driver pin 'R_OBUF[7]_inst_i_53/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 8th driver pin 'R_OBUF[7]_inst_i_54/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 9th driver pin 'R_OBUF[7]_inst_i_55/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 10th driver pin 'R_OBUF[7]_inst_i_56/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 11th driver pin 'R_OBUF[7]_inst_i_57/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[19] with 12th driver pin 'R_OBUF[7]_inst_i_58/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 1st driver pin 'R_OBUF[7]_inst_i_59/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 2nd driver pin 'R_OBUF[7]_inst_i_60/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 3rd driver pin 'R_OBUF[7]_inst_i_61/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 4th driver pin 'R_OBUF[7]_inst_i_62/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 5th driver pin 'R_OBUF[7]_inst_i_63/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[5] with 6th driver pin 'R_OBUF[7]_inst_i_64/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 1st driver pin 'R_OBUF[7]_inst_i_65/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 2nd driver pin 'R_OBUF[7]_inst_i_66/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 3rd driver pin 'R_OBUF[7]_inst_i_67/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 4th driver pin 'R_OBUF[7]_inst_i_68/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 5th driver pin 'R_OBUF[7]_inst_i_69/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 6th driver pin 'R_OBUF[7]_inst_i_70/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 7th driver pin 'R_OBUF[7]_inst_i_71/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 8th driver pin 'R_OBUF[7]_inst_i_72/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 9th driver pin 'R_OBUF[7]_inst_i_73/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 10th driver pin 'R_OBUF[7]_inst_i_74/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[20] with 11th driver pin 'R_OBUF[7]_inst_i_75/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 1st driver pin 'R_OBUF[7]_inst_i_6/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 2nd driver pin 'R_OBUF[7]_inst_i_7/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 3rd driver pin 'R_OBUF[7]_inst_i_8/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 4th driver pin 'R_OBUF[7]_inst_i_9/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 5th driver pin 'R_OBUF[7]_inst_i_10/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 6th driver pin 'R_OBUF[7]_inst_i_11/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[6] with 7th driver pin 'R_OBUF[7]_inst_i_12/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 1st driver pin 'R_OBUF[7]_inst_i_14/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 2nd driver pin 'R_OBUF[7]_inst_i_15/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 3rd driver pin 'R_OBUF[7]_inst_i_16/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 4th driver pin 'R_OBUF[7]_inst_i_17/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 5th driver pin 'R_OBUF[7]_inst_i_18/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 6th driver pin 'R_OBUF[7]_inst_i_19/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 7th driver pin 'R_OBUF[7]_inst_i_20/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin M1/w[21] with 8th driver pin 'R_OBUF[7]_inst_i_21/O' [/home/kanish/adders/multiplier_rca/mul/mul.srcs/sources_1/new/and_mod.v:27]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       29|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     5|
+|2     |LUT2   |   255|
+|3     |LUT3   |     2|
+|4     |LUT4   |     8|
+|5     |LUT5   |     6|
+|6     |LUT6   |     8|
+|7     |IBUF   |    48|
+|8     |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   364|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4647
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 254 critical warnings and 451 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.539 ; gain = 597.969 ; free physical = 676 ; free virtual = 4646
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1933.547 ; gain = 597.969 ; free physical = 676 ; free virtual = 4646
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1951.352 ; gain = 0.000 ; free physical = 955 ; free virtual = 4927
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2083.098 ; gain = 0.000 ; free physical = 865 ; free virtual = 4851
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2389f733
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 101 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 2083.098 ; gain = 747.527 ; free physical = 865 ; free virtual = 4851
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1462.523; main = 1348.406; forked = 374.999
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2798.191; main = 2083.102; forked = 978.086
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/kanish/adders/multiplier_rca/mul/mul.runs/synth_1/mac.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mac_utilization_synth.rpt -pb mac_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  5 04:03:02 2023...
